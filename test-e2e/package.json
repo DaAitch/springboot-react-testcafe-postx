@@ -1,0 +1,18 @@
+{
+  "name": "teste2e",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "test": "testcafe chrome test/**/*.test.js -c 1 -S -s build/screenshots -r spec,xunit:target/surefire-reports/TEST-testcafe.xml",
+    "test:headless": "testcafe chrome:headless test/**/*.test.js -c 1 -S -s build/screenshots -r spec,xunit:target/surefire-reports/TEST-testcafe.xml"
+  },
+  "dependencies": {
+    "babel-eslint": "8.2.6",
+    "dotenv": "^6.0.0",
+    "eslint": "5.1.0",
+    "js-logger": "1.4.1",
+    "portfinder": "1.0.13",
+    "testcafe": "0.20.5"
+  }
+}

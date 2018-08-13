@@ -1,0 +1,15 @@
+# Node
+/node_modules
+
+# TestCafe
+/build
+
+# Maven
+/target
+
+# Maven Eirslett Plugin
+/etc
+/node
+
+# env file for configuring local env vars
+/.env
