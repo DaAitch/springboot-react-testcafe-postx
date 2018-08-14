@@ -139,34 +139,6 @@
 				</plugins>
 			</build>
 		</profile>
-
-		<profile>
-			<id>initdb</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-				<property>
-					<name>initdb</name>
-				</property>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-		                <groupId>org.codehaus.mojo</groupId>
-		                <artifactId>exec-maven-plugin</artifactId>
-		                <configuration>
-		                    <executable>java</executable>
-		                    <arguments>
-		                        <argument>-classpath</argument>
-		                        <classpath />
-		                        <argument>de.aitch.postx.server.Application</argument>
-		                        <argument>admin</argument>
-		                        <argument>drop-and-init-db</argument>
-		                    </arguments>
-		                </configuration>
-		            </plugin>
-				</plugins>
-			</build>
-		</profile>
 	</profiles>
 
 </project>
